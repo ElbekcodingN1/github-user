@@ -1,0 +1,413 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body{
+    font-family: 'Space Mono', monospace;
+    background-color:#F6F8FF;
+}
+.container{
+    width: 100%;
+    
+}
+.wrapper{
+    max-width: 730px;    
+    margin: 0 auto;
+    
+  
+}
+.container .wrapper .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 730px;
+    margin-bottom: 36px;
+}
+.container .wrapper .content .header__text{
+    gap:16px;
+    display: flex;
+}
+.container .wrapper .content .content__text h1{
+    color: #222731;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+}
+.container .wrapper .content .header__text p{
+    color: #4B6A9B;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+.form{
+    padding:10px 10px 10px 32px;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    display: flex;
+    align-items:center;
+    margin-bottom: 24px;
+   
+
+}
+
+.form .input__info  button{
+    background: #0079FF;
+    border:none;
+    border-radius: 10px;
+    padding:12.5px 24px 13.5px 24px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+   
+    
+}
+.form .input__info{
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.form .input__info button:hover{
+    background-color:#60ABFF;
+    cursor:pointer;
+}
+
+.form .input__info input{
+    outline: none;
+     border:none;
+     color: #082b63;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 25px; 
+     margin-left:23px;
+}
+
+.menu{
+    width: 730px;
+    border-radius: 15px;
+    background: #FEFEFE;
+    padding-bottom:48px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+.menu .menu_item .img__logo{
+    width: 117px;
+    height: 117px;
+    padding:48px 0 0 48px;
+}
+.menu .menu_item .img__logo img{
+    border-radius:50%;
+}
+.menu .menu_item {
+    display: flex;
+}
+.menu .menu_item .the_octocat{
+    margin-left:37px;
+    margin-top:44px;
+ }
+.menu .menu_item .the_octocat .item_info{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.menu_item .the_octocat .item_info .text_main h1{
+    color: #2B3442;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+}
+.menu_item .the_octocat .item_info .text_main .this{
+    color: #4B6A9B;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+    margin-bottom: 32px;
+}
+.menu_item .the_octocat .item_info .text_main p{
+    color: #0079FF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu_item .the_octocat .item_info  .january{
+    padding:10px;
+
+}
+.menu_item .the_octocat .item_info   .text__p{
+    display: none;
+    max-width: 493px;
+    color: #4B6A9B;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+.menu_item .the_octocat .item_info  .january p{
+    color: #697C9A;
+    font-size: 15px;
+    font-style: italic;
+}
+.menu_item .the_octocat .repos_info{
+    width: 480px;
+    display: flex;
+    height: 85px;
+    margin-bottom: 37px;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: #F6F8FF;
+}
+.menu_item .the_octocat .repos_info .repos p{
+    color: #4B6A9B;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu_item .the_octocat .repos_info .repos strong{
+    
+    color: #2B3442;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer{
+   display: flex;
+   justify-content: space-between;
+   width: 480px;
+
+}
+.footer .san{
+    gap:19px;
+    display: flex;
+    cursor:pointer;
+}
+.item_not .not{
+    display: flex;
+    margin-right: 51px;
+    gap:19px;
+    cursor:pointer;
+}
+.item_not .gi-hub{
+    display: flex;
+    gap:19px;
+    cursor:pointer;
+}
+
+
+@media (max-width:700px) {
+
+    .wrapper .content{
+        max-width: 573px;
+        margin-bottom: 35px;
+    }
+    .container{
+       width: 573px;
+       margin:0 auto;
+    }
+    
+    .form{
+        width: 530px;
+    }
+    
+    .form .input__info input::placeholder{
+        color: #4B6A9B;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left:5px;
+    }
+    .menu{
+      width: 573px;
+     
+    }
+    .menu .menu_item .the_octocat .item_info{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_item .the_octocat .item_info .text_main .this{
+        display:none;
+    }
+    .menu_item .the_octocat .item_info  .text__p{
+        display: block;
+        margin-left:-160px;
+    
+    }
+    .menu_item .the_octocat .item_info  .january p{
+        margin-top: -20px;
+        margin-left:-10px;
+    }
+    .menu_item .the_octocat .repos_info{
+        margin-left:-160px;
+    }
+    .footer{
+        margin-left:-160px;
+    }
+    .menu .menu_item .the_octocat .item_info{
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+      
+    }
+    .menu .menu_item .the_octocat{
+        width: 375px;
+    }
+    .menu_item .the_octocat .item_info .text_main{
+        width: 375px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .wrapper .content{
+        max-width: 327px;
+        margin-bottom: 35px;
+    }
+    .container{
+        width: 327px;
+        margin:0 auto;
+      
+     }
+     .form{
+        width: 318px;
+        padding:6.5px 0px 7px 16px;
+        border-radius: 15px;
+        background: #FEFEFE;
+        box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+        display: flex;
+        align-items:center;
+        margin-bottom: 16px;
+    }
+    .form .input__info  button{
+        background: #0079FF;
+        border:none;
+        border-radius: 10px;
+        padding:12.5px 16px 13.5px 16px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        
+    }
+    .form .input__info  input{
+         width: 184px;
+         border:none;
+         color: #082b63;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px; 
+        }
+        .menu{
+            Width:327px;
+          }
+          .menu .menu_item .img__logo img{
+            width: 70px;
+            height: 70px;
+            background-color:chocolate;
+         }
+         .menu .menu_item .img__logo{
+            padding:32px 0 0 24px;
+         }
+         .menu_item .the_octocat .item_info .text_main h1{
+            width: 108px;
+            color: #2B3442;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .menu_item .the_octocat .item_info .text_main p{
+            width: 64px;
+            color: #0079FF;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .menu_item .the_octocat .item_info  .january p{
+            width: 144px;
+            color: #697C9A;
+            font-size: 13px;
+            font-style: italic;
+        }
+        .menu_item .the_octocat .item_info   .text__p{
+            max-width: 279px;
+            color: #4B6A9B;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px; 
+            margin-left:-100px;
+        }
+        .menu_item .the_octocat .repos_info{
+            width: 279px;
+            height: 85px;
+            display: flex;
+            margin-bottom: 24px;
+            justify-content: space-around;
+            border-radius: 10px;
+            background: #F6F8FF;
+            margin-left:-100px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            margin-left:-100px;
+          }
+          .menu .menu_item .the_octocat{
+             width: 200px;
+         }
+         .menu_item .the_octocat .item_info .text_main{
+            margin-top:-20px;
+            width: 200px;
+         }
+         .menu_item .the_octocat .item_info  .january{
+            width: 180px;
+         }
+         .menu .menu_item .the_octocat .item_info{
+            width: 200px;
+            }
+            .form .input__info  input{
+                border:none;
+                color: #082b63;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px; 
+                margin-left:5px;
+           }
+           .form .input__info {
+            max-width: 300px;
+           }
+           .form .input__info input::placeholder{
+                color: #4B6A9B;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 25px;
+                margin-left:5px;
+            }
+           .menu_item .the_octocat .repos_info .repos p{
+            color: #4B6A9B;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .menu_item .the_octocat .repos_info .repos strong{
+            text-align: center;
+            color: #2B3442;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .form .input__info{
+            width:100%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+       
+           
+        
+        
+       
+    }
+   
+
+
+
